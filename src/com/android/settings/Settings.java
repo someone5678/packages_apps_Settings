@@ -518,6 +518,11 @@ public class Settings extends SettingsActivity {
     public static class HearingDevicesPairingActivity extends SettingsActivity { /* empty */ }
 
     /**
+     * Activity for The DevRunningServicesActivity
+     */
+    public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
+
+    /**
      * Activity for PreviouslyConnectedDeviceDashboardFragment
      */
     public static class PreviouslyConnectedDevicesActivity extends SettingsActivity { /* empty */ }
