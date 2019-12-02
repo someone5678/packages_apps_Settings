@@ -79,4 +79,8 @@
     <string name="idle_manager_title">Idle Manager</string>
     <string name="idle_manager_summary">Stop all non-essential background processes when the device is idle</string>
 
+    <!-- Hardware Info -->
+    <string name="device_manufacturer">Manufacturer</string>
+    <string name="device_codename">Codename</string>
+
 </resources>

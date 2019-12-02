@@ -21,6 +21,24 @@
     android:title="@string/model_info"
     settings:keywords="@string/keywords_model_and_hardware">
 
+    <!-- Manufacturer -->
+    <Preference
+        android:key="hardware_info_device_manufacturer"
+        android:title="@string/device_manufacturer"
+        android:summary="@string/summary_placeholder"
+        android:selectable="false"
+        settings:controller="com.android.settings.deviceinfo.hardwareinfo.DeviceManufacturerPreferenceController"
+        settings:enableCopying="true"/>
+
+    <!-- Codename -->
+    <Preference
+        android:key="hardware_info_device_codename"
+        android:title="@string/device_codename"
+        android:summary="@string/summary_placeholder"
+        android:selectable="false"
+        settings:controller="com.android.settings.deviceinfo.hardwareinfo.DeviceCodenamePreferenceController"
+        settings:enableCopying="true"/>
+
     <!-- Model -->
     <Preference
         android:key="hardware_info_device_model"
