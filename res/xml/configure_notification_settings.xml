@@ -126,6 +126,12 @@
             android:title="@string/notification_polite_title"
             settings:controller="com.android.settings.notification.PoliteNotificationsPreferenceController" />
 
+	    <lineageos.preference.SystemSettingSwitchPreference
+            android:key="notification_sound_vib_screen_on"
+            android:title="@string/notification_sound_vib_screen_on_title"
+            android:summary="@string/notification_sound_vib_screen_on_summary"
+            android:defaultValue="true" />
+
         <com.android.settingslib.RestrictedPreference
             android:key="zen_mode_notifications"
             android:order="18"
