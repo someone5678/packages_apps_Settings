@@ -75,4 +75,8 @@
     <string name="notification_sound_vib_screen_on_title">Notification sound when screen is on</string>
     <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
 
+    <!-- Idle Manager -->
+    <string name="idle_manager_title">Idle Manager</string>
+    <string name="idle_manager_summary">Stop all non-essential background processes when the device is idle</string>
+
 </resources>
