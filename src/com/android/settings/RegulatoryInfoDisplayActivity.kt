@@ -16,14 +16,13 @@
 
 package com.android.settings
 
-import android.app.Activity
 import android.os.Bundle
 import android.view.Gravity
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.appcompat.app.AlertDialog
 import com.android.settings.deviceinfo.regulatory.RegulatoryInfo.getRegulatoryInfo
 import com.android.settings.overlay.FeatureFactory.Companion.featureFactory
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity
 
 /**
  * [Activity] that displays regulatory information for the "Regulatory information"
@@ -35,40 +34,17 @@ import com.android.settings.overlay.FeatureFactory.Companion.featureFactory
  * or add a string resource named "regulatory_info_text" with an HTML version of the required
  * information (text will be centered in the dialog).
  */
-class RegulatoryInfoDisplayActivity : Activity() {
+class RegulatoryInfoDisplayActivity : CollapsingToolbarBaseActivity() {
 
     /** Display the regulatory info graphic in a dialog window. */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val builder = AlertDialog.Builder(this)
-            .setTitle(R.string.regulatory_labels)
-            .setOnDismissListener { finish() }  // close the activity
-            .setPositiveButton(android.R.string.ok, null)
-
         getRegulatoryInfo()?.let {
             val view = layoutInflater.inflate(R.layout.regulatory_info, null)
             val image = view.requireViewById<ImageView>(R.id.regulatoryInfo)
             image.setImageDrawable(it)
-            builder.setView(view)
-            builder.show()
+            setContentView(view)
             return
         }
-
-        val regulatoryText = getRegulatoryText()
-        if (!regulatoryText.isNullOrEmpty()) {
-            builder.setMessage(regulatoryText)
-            val dialog = builder.show()
-            // we have to show the dialog first, or the setGravity() call will throw a NPE
-            dialog.findViewById<TextView>(android.R.id.message)?.gravity = Gravity.CENTER
-        } else {
-            // neither drawable nor text resource exists, finish activity
-            finish()
-        }
-    }
-
-    private fun getRegulatoryText(): CharSequence? {
-        val regulatoryInfoText = resources.getText(R.string.regulatory_info_text)
-        if (regulatoryInfoText.isNotBlank()) return regulatoryInfoText
-        return featureFactory.hardwareInfoFeatureProvider?.countryIfOriginLabel
     }
 }
