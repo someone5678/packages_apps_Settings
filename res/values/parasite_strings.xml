@@ -83,4 +83,8 @@
     <string name="device_manufacturer">Manufacturer</string>
     <string name="device_codename">Codename</string>
 
+    <!-- fingerprint lockout -->
+    <string name="fingerprint_lockout_title">Disable fingerprint lockout</string>
+    <string name="fingerprint_lockout_summary">Deactivates 30 second timeout as well as permanent lockout after multiple failed fingerprint unlock attempts</string>
+
 </resources>
