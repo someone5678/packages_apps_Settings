@@ -515,4 +515,9 @@ public class Settings extends SettingsActivity {
 
     public static class HearingDevicesActivity extends SettingsActivity { /* empty */ }
     public static class HearingDevicesPairingActivity extends SettingsActivity { /* empty */ }
+
+    /**
+     * Activity for PreviouslyConnectedDeviceDashboardFragment
+     */
+    public static class PreviouslyConnectedDevicesActivity extends SettingsActivity { /* empty */ }
 }
