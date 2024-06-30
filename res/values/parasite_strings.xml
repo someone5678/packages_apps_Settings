@@ -87,6 +87,10 @@
     <string name="fingerprint_lockout_title">Disable fingerprint lockout</string>
     <string name="fingerprint_lockout_summary">Deactivates 30 second timeout as well as permanent lockout after multiple failed fingerprint unlock attempts</string>
 
+    <!-- face lockout -->
+    <string name="face_lockout_title">Disable face lockout</string>
+    <string name="face_lockout_summary">Deactivates 30 second timeout as well as permanent lockout after multiple failed face unlock attempts</string>
+
     <!-- Running services - Background processes tab -->
     <string name="background_processes_settings_title">Background processes</string>
 
