@@ -89,4 +89,8 @@
 
     <!-- Running services - Background processes tab -->
     <string name="background_processes_settings_title">Background processes</string>
+
+    <!-- Wifi Display settings. The title of a menu item to disable mirroring confimration [CHAR LIMIT=40] -->
+    <string name="mirroring_confirmation_disable_menu_item">Disable mirroring confirmation</string>
+
 </resources>
