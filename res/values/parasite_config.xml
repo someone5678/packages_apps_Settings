@@ -6,4 +6,7 @@
     <!-- Show battery Maximum Capacity -->
     <bool name="config_show_battery_maximum_capacity" translatable="false">true</bool>
 
+    <!-- Battery Info: mAh -->
+    <integer name="config_battery_divider" translatable="false">1000</integer>
+
 </resources>
