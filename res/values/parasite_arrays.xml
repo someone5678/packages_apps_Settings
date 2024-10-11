@@ -1,3 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Log verbosity -->
+    <string-array name="log_verbosity_entries" translatable="false">
+        <item>@string/log_verbosity_verbose</item>
+        <item>@string/log_verbosity_debug</item>
+        <item>@string/log_verbosity_info</item>
+        <item>@string/log_verbosity_warn</item>
+        <item>@string/log_verbosity_error</item>
+        <item>@string/log_verbosity_assert</item>
+        <item>@string/log_verbosity_silent</item>
+    </string-array>
+
+    <string-array name="log_verbosity_values" translatable="false">
+        <item>V</item>
+        <item>D</item>
+        <item>I</item>
+        <item>W</item>
+        <item>E</item>
+        <item>A</item>
+        <item>S</item>
+    </string-array>
+
 </resources>

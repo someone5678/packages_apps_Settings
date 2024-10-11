@@ -252,6 +252,14 @@
             android:entries="@array/select_logpersist_titles"
             android:entryValues="@array/select_logpersist_values" />
 
+        <lineageos.preference.SystemPropertyListPreference
+            android:key="log.tag"
+            android:title="@string/log_verbosity_title"
+            android:entries="@array/log_verbosity_entries"
+            android:entryValues="@array/log_verbosity_values"
+            android:summary="%s"
+            android:defaultValue="V" />
+
         <SwitchPreferenceCompat
             android:key="camera_laser_sensor_switch"
             android:title="@string/camera_laser_sensor_switch" />

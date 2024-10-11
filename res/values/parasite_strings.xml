@@ -93,4 +93,14 @@
     <!-- Wifi Display settings. The title of a menu item to disable mirroring confimration [CHAR LIMIT=40] -->
     <string name="mirroring_confirmation_disable_menu_item">Disable mirroring confirmation</string>
 
+    <!-- Log verbosity -->
+    <string name="log_verbosity_title">Log verbosity</string>
+    <string name="log_verbosity_verbose">Verbose</string>
+    <string name="log_verbosity_debug">Debug</string>
+    <string name="log_verbosity_info">Info</string>
+    <string name="log_verbosity_warn">Warn</string>
+    <string name="log_verbosity_error">Error</string>
+    <string name="log_verbosity_assert">Assert</string>
+    <string name="log_verbosity_silent">Silent</string>
+
 </resources>
