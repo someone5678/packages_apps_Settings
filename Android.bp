@@ -117,6 +117,7 @@ android_library {
         "LineagePreferenceLib",
         "vendor.lineage.fastcharge-V1.0-java",
 
+        "androidx.room_room-runtime",
         "androidx.fragment_fragment-ktx",
         "androidx.lifecycle_lifecycle-runtime-ktx",
         "custom-sdk_com.github.bumptech.glide_glide",
