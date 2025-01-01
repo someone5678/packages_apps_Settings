@@ -21,8 +21,7 @@
     android:title="@string/gesture_preference_title">
 
     <lineageos.preference.LineagePartsPreference
-        android:key="touchscreen_gesture_settings"
-        settings:requiresFeature="lineagehardware:FEATURE_TOUCHSCREEN_GESTURES" />
+        android:key="touchscreen_gesture_settings" />
 
     <lineageos.preference.RemotePreference
             android:key="device_touchscreen_gesture_settings"
