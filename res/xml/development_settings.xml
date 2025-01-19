@@ -253,7 +253,7 @@
             android:entryValues="@array/select_logpersist_values" />
 
         <lineageos.preference.SystemPropertyListPreference
-            android:key="log.tag"
+            android:key="persist.sys.log.tag"
             android:title="@string/log_verbosity_title"
             android:entries="@array/log_verbosity_entries"
             android:entryValues="@array/log_verbosity_values"
