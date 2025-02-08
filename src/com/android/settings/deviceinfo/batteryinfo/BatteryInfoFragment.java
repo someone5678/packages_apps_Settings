@@ -68,9 +68,7 @@ public class BatteryInfoFragment extends DashboardFragment {
             new BaseSearchIndexProvider(R.xml.battery_info) {
                 @Override
                 protected boolean isPageSearchEnabled(Context context) {
-                    return FeatureFactory.getFeatureFactory()
-                            .getBatterySettingsFeatureProvider()
-                            .isBatteryInfoEnabled(context);
+                    return context.getResources().getBoolean(R.bool.config_show_battery_info);
                 }
             };
 }

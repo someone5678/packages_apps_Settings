@@ -21,21 +21,18 @@ import android.content.Context;
 import com.android.settings.core.BasePreferenceController;
 import com.android.settings.fuelgauge.BatterySettingsFeatureProvider;
 import com.android.settings.overlay.FeatureFactory;
+import com.android.settings.R;
 
 /** Controller to enter battery information page. */
 public class BatteryInfoPreferenceController extends BasePreferenceController {
 
-    private final BatterySettingsFeatureProvider mBatterySettingsFeatureProvider;
-
     public BatteryInfoPreferenceController(Context context, String key) {
         super(context, key);
-        mBatterySettingsFeatureProvider = FeatureFactory.getFeatureFactory()
-                .getBatterySettingsFeatureProvider();
     }
 
     @Override
     public int getAvailabilityStatus() {
-        return mBatterySettingsFeatureProvider.isBatteryInfoEnabled(mContext) ? AVAILABLE
+        return mContext.getResources().getBoolean(R.bool.config_show_battery_info) ? AVAILABLE
                 : UNSUPPORTED_ON_DEVICE;
     }
 }
